@@ -29,3 +29,6 @@ This Android Studio plugin helps developers quickly set up a new feature using C
 └── model/
     ├── <feature-name>UiState.kt
     └── <feature-name>UiEffect.kt
+```
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
