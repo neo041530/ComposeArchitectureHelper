@@ -14,11 +14,7 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    <h1>幫助快速鍵立Clean Architecture需要的資料夾以及檔案 </h1>
-        <ul>
-            <li>DataLayer</li>
-            <li>UILayer</li>
-        </ul>
+    This Android Studio plugin helps developers quickly set up a new feature using Compose and Hilt by generating the necessary folder structure and files.
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.

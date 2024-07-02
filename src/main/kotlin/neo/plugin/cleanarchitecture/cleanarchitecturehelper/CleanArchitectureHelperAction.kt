@@ -14,12 +14,12 @@ class CleanArchitectureHelperAction : AnAction() {
         val project = e.project ?: return
         val virtualFile = e.getData(CommonDataKeys.VIRTUAL_FILE) ?: return
         if (!virtualFile.isDirectory) {
-            Messages.showErrorDialog(project, "請選擇一個目錄", "錯誤")
+            Messages.showErrorDialog(project, "Please select a directory", "Error")
             return
         }
 
         // 獲取新的檔名
-        val fileName = Messages.showInputDialog(project, "請輸入檔名", "新增檔案", Messages.getQuestionIcon())
+        val fileName = Messages.showInputDialog(project, "Enter the name of the new feature", "Enter", Messages.getQuestionIcon())
         if (fileName.isNullOrEmpty()) {
             return
         }
@@ -97,7 +97,7 @@ class CleanArchitectureHelperAction : AnAction() {
                     )
                 )
             } catch (e: Exception) {
-                Messages.showErrorDialog(project, "檔案建立失敗: ${e.message}", "錯誤")
+                Messages.showErrorDialog(project, "ERROR: ${e.message}", "Error")
             }
         }
     }
