@@ -53,7 +53,7 @@ class GetFileContent(private val fileName: String, private val project: Project)
             import javax.inject.Singleton
 
             @Singleton
-            class ${fileName}DataSource (){}
+            class ${fileName}DataSource @Inject constructor(){}
         """.trimIndent()
     }
 
